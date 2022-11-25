@@ -396,7 +396,6 @@ textarea {
 
 .novo {
   font-size: 1.5em;
-
   --bs-btn-color: rgb(12, 12, 12);
   --bs-btn-bg: #56034a;
   --bs-btn-border-color: #56034a;
@@ -414,36 +413,64 @@ textarea {
 
 #sumir {
   display: none;
-} 
+}
 
 #saibaMais {
+  display: none;
   padding-right: 90px;
   padding-left: 90px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 #saibaMais2 {
-  padding-right: 90px;
-  padding-top: 50px;
-  padding-left: 90px;
-  padding-bottom: 50px;
-}
-#saibaMais3 {
+  display: none;
   padding-right: 90px;
   padding-top: 50px;
   padding-left: 90px;
   padding-bottom: 50px;
 }
 
-.lua {
+#saibaMais3 {
+  display: none;
+  padding-right: 90px;
+  padding-top: 50px;
+  padding-left: 90px;
+  padding-bottom: 50px;
+}
+
+/* titulo do curso */
+.curso {
+  font-size: 25px;
+  font-style: italic;
+}
+
+/* titulo do curso / mais informações */
+.tcurso {
   margin-bottom: 50px;
   background-color: #250120;
   color: white;
   border-radius: 50%;
 }
+
 h4 {
   font-size: 34px;
 }
+
 .tamanhotexto {
   font-size: 22px;
 }
+
+/* titulo do curso */
+.curso {
+  font-size: 25px;
+  font-style: italic;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+;

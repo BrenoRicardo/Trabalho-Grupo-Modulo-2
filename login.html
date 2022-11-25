@@ -26,14 +26,23 @@
     <!-- conteudo do boot -->
     <main class="login">
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Endereço de email:</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="exemplo@exemplo.com">
+            <form name="form1">
+                <label for="exampleFormControlInput1" class="form-label">Endereço de email:</label>
+                <input type="email" name="email"
+                    pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                    oninvalid="this.setCustomValidity('Insira um endereço de e-mail válido.')"
+                    oninput="this.setCustomValidity('')" class="form-control" id="exampleFormControlInput1"
+                    placeholder="exemplo@exemplo.com" required>
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Senha:</label>
-            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="senha">
+            <input type="password" class="form-control" minlength="8"
+                oninvalid="this.setCustomValidity('A senha tem que ter no mínimo 8 caracteres.')"
+                oninput="this.setCustomValidity('')" id="exampleFormControlInput1" placeholder="senha" required>
+            <br>
+            <input type="submit" value="Enviar" class="btn btn-danger">
         </div>
-        <button type="button" class="btn btn-danger">Enviar</button>
+        </form>
         <div>
             <br>
             <h6><a class="senha" href="recupsenha.html">Esqueceu sua senha? Clique aqui</a></h6>

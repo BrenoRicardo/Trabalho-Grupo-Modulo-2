@@ -2,12 +2,6 @@ function feed(){
     {alert("Feedback enviado com sucesso!")}
     };
     
-    // TUDO INVISIVEL NA PAGINA DE PACOTES
-    
-    document.getElementById("saibaMais").style.display = "none";
-    document.getElementById("saibaMais2").style.display = "none";
-    document.getElementById("saibaMais3").style.display = "none";
-    
     // BOTÃO FRONT 1 SLIDE END E INFORMAÇÕES PRA MOSTRAR
     
     function saiba(){
@@ -111,3 +105,22 @@ function pesquisacep(valor) {
         limpa_formulário_cep();
     }
 };
+
+//alerta de sucesso no e-mail
+function success(){
+    alert("Um código de recuperação foi enviado para seu e-mail.")
+    }
+    
+    //função para checar se o e-mail do recupsenha está vazio
+    function nulo(){
+        if (document.forms['form1'].email.value === "") {
+          alert("Insira um e-mail válido.");
+          return false;
+        }return true}
+       
+       
+        function confirmaSenha(){
+            if (document.forms['form2'].senha1.value !== document.forms['form2'].senha2.value) {
+              alert("As senhas não são iguais.");
+              return false;
+            }return true}
